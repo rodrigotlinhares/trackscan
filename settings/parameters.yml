@@ -1,0 +1,55 @@
+%YAML:1.0
+#
+## Segmentation stuff
+#
+kernel_erosion: 13
+kernel_dilation: 2
+#
+## Tracking stuff
+#
+size_template_x: 100
+size_template_y: 270
+size_bins: 1
+n_bins: 256
+n_max_iters: 15
+confidence_thres: 0.85
+epsilon: 0.05
+percentage_active: 25
+rotation_thres: 0.2
+visibility_thres: 0.1
+#
+## Mosaicking stuff
+#
+offset_templates: 6
+grid_x: 85
+grid_y: 60
+thresh_include: 0.97
+min_track_frames: 20
+length_line: 600
+#
+## Feat stuff
+#
+max_features: 1000
+min_feat_distance: 10
+ncc_scale: 0.1 #TODO rename
+flann_thres: 0.7
+ft_param1: 4
+ft_param2: 0.02
+ft_param3: 8
+ft_param4: 0.6
+#
+## RANSAC stuff
+#
+d_ransac_iterations: 1000
+d_ransac_inliers: 4
+d_ransac_error: 10
+d_ransac_min_consensus: 3
+#
+## TPS illumination
+#
+n_ctrl_pts_x_i: 2
+n_ctrl_pts_y_i: 3
+#
+## MISC
+#
+save_stats: 1
